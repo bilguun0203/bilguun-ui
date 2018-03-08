@@ -13,11 +13,16 @@
 //$body-color: #151417;
 
 // Changing the border radius of buttons
+//$alert-border-radius: 1px;
+$alert-border-level: 10;
 $border-radius: 2px;
+$input-border-width: 2px;
+$input-btn-border-width: 2px;
+$pagination-border-width: 2px;
 
 // Changing the theme colors
-$primary: #3F51B5;
-$secondary: #304FFE;
+$primary: #283593;
+$secondary: #009688;
 $success: #4CAF50;
 $info: #1E88E5;
 $warning: #FFC107;

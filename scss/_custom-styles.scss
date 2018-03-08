@@ -1,19 +1,67 @@
 // Add additional styles here. For example, overwrite certain styles or add new components.
 // Tip: You can use bootstrap's powerful mixins here!
 
+.alert {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 3px solid;
+}
+//.alert-link {
+//  font-weight: normal;
+//}
 
-//.alert-myalert {
-//  @include alert-variant(#60667d, #1d1d1d, #f4fdff);
+.shadow {
+  box-shadow: 0 3px 6px rgba($dark, 0.18), 0 3px 6px rgba($dark, 0.25);
+}
+.raised {
+  box-shadow: 0 1px 3px rgba($dark, 0.15), 0 1px 2px rgba($dark, 0.25);
+  @include transition($btn-transition);
+}
+.raised:hover {
+  box-shadow: 0 3px 6px rgba($dark, 0.18), 0 3px 6px rgba($dark, 0.25);
+  @include transition($btn-transition);
+}
+
+//a {
+//  color: inherit;
+//  background-color: rgba(theme-color-level('info', -3), 0.1);
+//  font-weight: 400;
+//}
+//
+//.navbar-brand,
+//.nav-link {
+//  background-color: transparent;
 //}
 
 @each $color, $value in $theme-colors {
+  // -- Alert
   .alert-#{$color} {
-    box-shadow: 3px 3px theme-color-level($color, -3);
+    border-color: theme-color-level($color, -3);
   }
-}
-
-@each $color, $value in $theme-colors {
-  .btn-#{$color} .shadow {
-    box-shadow: 0 3px 6px theme-color-level($color, -3), 0 3px 6px theme-color-level($color, -3);
+  // -- Shadow
+  .btn-#{$color}.shadow,
+  .btn-outline-#{$color}.shadow {
+    box-shadow: 0 3px 6px rgba(theme-color-level($color, -3), 0.18), 0 3px 6px rgba(theme-color-level($color, -3), 0.25);
+  }
+  .shadow-#{$color} {
+    box-shadow: 0 3px 6px rgba(theme-color-level($color, -3), 0.18), 0 3px 6px rgba(theme-color-level($color, -3), 0.25);
+  }
+  // -- Raised
+  .btn-#{$color}.raised,
+  .btn-outline-#{$color}.raised {
+    box-shadow: 0 1px 3px rgba(theme-color-level($color, -3), 0.15), 0 1px 2px rgba(theme-color-level($color, -3), 0.25);
+  }
+  .raised-#{$color} {
+    @include transition($btn-transition);
+    box-shadow: 0 1px 3px rgba(theme-color-level($color, -3), 0.15), 0 1px 2px rgba(theme-color-level($color, -3), 0.25);
+  }
+  .btn-#{$color}.raised:hover,
+  .btn-outline-#{$color}.raised:hover {
+    box-shadow: 0 3px 6px rgba(theme-color-level($color, -3), 0.18), 0 3px 6px rgba(theme-color-level($color, -3), 0.25);
+  }
+  .raised-#{$color}:hover {
+    @include transition($btn-transition);
+    box-shadow: 0 3px 6px rgba(theme-color-level($color, -3), 0.18), 0 3px 6px rgba(theme-color-level($color, -3), 0.25);
   }
 }
