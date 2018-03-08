@@ -29,6 +29,7 @@ gulp.task('build-theme', function() {
 
 gulp.task('watch', ['build-theme'], function() {
   gulp.watch(['scss/*.scss'], ['build-theme']);
+  gulp.watch(['scss/mixins/*.scss'], ['build-theme']);
 });
 
 gulp.task('default', ['build-theme'], function() {
