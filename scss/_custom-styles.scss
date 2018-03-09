@@ -58,6 +58,20 @@
 //  background-color: transparent;
 //}
 
+.nav-tabs {
+  border: none;
+  //border-bottom: solid theme-color-level('primary', -10);
+}
+.nav-tabs .nav-item .nav-link {
+  border: none;
+  border-bottom: solid theme-color-level('primary', -10);
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  border: none;
+  border-bottom: solid theme-color-level('primary', 0);
+}
+
 @each $color, $value in $theme-colors {
   // -- Alert
   .alert-#{$color} {
