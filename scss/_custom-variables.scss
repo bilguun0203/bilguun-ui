@@ -12,6 +12,16 @@
 //$body-bg: #d3e9eb;
 //$body-color: #151417;
 
+// Changing the theme colors
+$primary: #283593;
+$secondary: #009688;
+$success: #4CAF50;
+$info: #1E88E5;
+$warning: #FFC107;
+$danger: #E53935;
+$light: #EEEEEE;
+$dark: #212121;
+
 // Changing the border radius of buttons
 //$alert-border-radius: 1px;
 $alert-border-level: 10;
@@ -28,15 +38,8 @@ $nav-tabs-link-active-border-color: theme-color-level("primary", 0);
 
 $card-border-width: 0;
 
-// Changing the theme colors
-$primary: #283593;
-$secondary: #009688;
-$success: #4CAF50;
-$info: #1E88E5;
-$warning: #FFC107;
-$danger: #E53935;
-$light: #EEEEEE;
-$dark: #212121;
+$link-color: theme-color("danger");
+$link-hover-color: theme-color("warning");
 
 
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
