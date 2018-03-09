@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Bilguun UI</title>
+    <title>Bilguun UI - Dark</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/bilguun-ui.min.css">
 </head>
-<body>
-<div class="navbar navbar-expand-lg navbar-light bg-light">
+<body class="bg-dark text-light">
+<div class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a href="#" class="navbar-brand">Bootstrap - Custom</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,11 +17,11 @@
 
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Light <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="dark.html">Dark</a>
+                    <a class="nav-link" href="index.html">Light</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="dark.html">Dark <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -37,13 +37,13 @@
                 <h1 id="Mode">Variants</h1>
             </div>
             <div class="bs-component">
-                <div class="jumbotron bg-dark text-light">
-                    <h1 class="display-3">This is <span class="bg-light text-dark">Light</span> variant of theme!</h1>
-                    <p class="lead">LIGHT ЦАГААН LIGHT ЦАГААН LIGHT ЦАГААН LIGHT ЦАГААН LIGHT ЦАГААН LIGHT ЦАГААН LIGHT ЦАГААН LIGHT ЦАГААН LIGHT</p>
+                <div class="jumbotron text-dark">
+                    <h1 class="display-3">This is <span class="bg-dark text-light">Dark</span> variant of theme!</h1>
+                    <p class="lead">DARK ХАР DARK ХАР DARK ХАР DARK ХАР DARK ХАР DARK ХАР DARK ХАР DARK ХАР DARK</p>
                     <hr class="my-4">
-                    <p>If you want to see dark variant of this theme, click button below.</p>
+                    <p>If you want to see light variant of this theme, click button below.</p>
                     <p class="lead">
-                        <a class="btn btn-outline-info btn-lg raised" href="dark.html">Dark Variant</a>
+                        <a class="btn btn-primary btn-lg raised" href="index.html">Light Variant</a>
                     </p>
                 </div>
             </div>
@@ -789,7 +789,7 @@
 
                 <h3>Table Hover</h3>
                 <div class="bs-component">
-                    <table class="table table-hover">
+                    <table class="table table-bg-dark table-hover-dark">
                         <thead>
                         <tr>
                             <th scope="col">Type</th>
@@ -864,7 +864,7 @@
                 </div><!-- /example -->
                 <h3>Table Regular</h3>
                 <div class="bs-component">
-                    <table class="table">
+                    <table class="table table-bg-dark">
                         <thead>
                         <tr>
                             <th scope="col">Type</th>
@@ -961,21 +961,21 @@
                             <div class="form-group row">
                                 <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                                 <div class="col-sm-10">
-                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                                    <input type="text" readonly class="form-control-plaintext form-dark" id="staticEmail" value="email@example.com">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <input type="email" class="form-control form-dark" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <input type="password" class="form-control form-dark" id="exampleInputPassword1" placeholder="Password">
                             </div>
                             <div class="form-group">
                                 <label for="exampleSelect1">Example select</label>
-                                <select class="form-control" id="exampleSelect1">
+                                <select class="form-control form-dark" id="exampleSelect1">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -985,7 +985,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleSelect2">Example multiple select</label>
-                                <select multiple class="form-control" id="exampleSelect2">
+                                <select multiple class="form-control form-dark" id="exampleSelect2">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -995,7 +995,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleTextarea">Example textarea</label>
-                                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                <textarea class="form-control form-dark" id="exampleTextarea" rows="3"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputFile">File input</label>
@@ -1049,42 +1049,42 @@
                     <div class="form-group">
                         <fieldset disabled>
                             <label class="control-label" for="disabledInput">Disabled input</label>
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
+                            <input class="form-control form-dark" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
                         </fieldset>
                     </div>
 
                     <div class="form-group">
                         <fieldset>
                             <label class="control-label" for="readOnlyInput">Readonly input</label>
-                            <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly>
+                            <input class="form-control form-dark" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly>
                         </fieldset>
                     </div>
 
                     <div class="form-group has-success">
                         <label class="form-control-label" for="inputSuccess1">Valid input</label>
-                        <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
+                        <input type="text" value="correct value" class="form-control is-valid form-dark" id="inputValid">
                         <div class="valid-feedback">Success! You've done it.</div>
                     </div>
 
                     <div class="form-group has-danger">
                         <label class="form-control-label" for="inputDanger1">Invalid input</label>
-                        <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
+                        <input type="text" value="wrong value" class="form-control is-invalid form-dark" id="inputInvalid">
                         <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label>
-                        <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge">
+                        <input class="form-control form-control-lg form-dark" type="text" placeholder=".form-control-lg" id="inputLarge">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label" for="inputDefault">Default input</label>
-                        <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+                        <input type="text" class="form-control form-dark" placeholder="Default input" id="inputDefault">
                     </div>
 
                     <div class="form-group">
                         <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
-                        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="inputSmall">
+                        <input class="form-control form-control-sm form-dark" type="text" placeholder=".form-control-sm" id="inputSmall">
                     </div>
 
                     <div class="form-group">
@@ -1094,7 +1094,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">$</span>
                                 </div>
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <input type="text" class="form-control form-dark" aria-label="Amount (to the nearest dollar)">
                                 <div class="input-group-append">
                                     <span class="input-group-text">.00</span>
                                 </div>
@@ -1131,7 +1131,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <select class="custom-select">
+                            <select class="custom-select form-dark">
                                 <option selected>Open this select menu</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -1562,7 +1562,7 @@
                     <h1 id="containers">Containers</h1>
                 </div>
                 <div class="bs-component">
-                    <div class="jumbotron">
+                    <div class="jumbotron text-dark">
                         <h1 class="display-3">Hello, world!</h1>
                         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                         <hr class="my-4">
@@ -1585,7 +1585,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="bs-component">
-                    <ul class="list-group">
+                    <ul class="list-group text-dark">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             Cras justo odio
                             <span class="badge badge-primary badge-pill">14</span>
@@ -1689,7 +1689,7 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card bg-light mb-3" style="max-width: 20rem;">
+                    <div class="card bg-light mb-3 text-dark" style="max-width: 20rem;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
                             <h4 class="card-title">Light card title</h4>
@@ -1707,56 +1707,56 @@
             </div>
             <div class="col-lg-4">
                 <div class="bs-component">
-                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                    <div class="card border-primary mb-3 text-dark" style="max-width: 20rem;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
                             <h4 class="card-title">Primary card title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card border-secondary mb-3" style="max-width: 20rem;">
+                    <div class="card border-secondary mb-3 text-dark" style="max-width: 20rem;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
                             <h4 class="card-title">Secondary card title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card border-success mb-3" style="max-width: 20rem;">
+                    <div class="card border-success mb-3 text-dark" style="max-width: 20rem;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
                             <h4 class="card-title">Success card title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card border-danger mb-3" style="max-width: 20rem;">
+                    <div class="card border-danger mb-3 text-dark" style="max-width: 20rem;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
                             <h4 class="card-title">Danger card title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card border-warning mb-3" style="max-width: 20rem;">
+                    <div class="card border-warning mb-3 text-dark" style="max-width: 20rem;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
                             <h4 class="card-title">Warning card title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card border-info mb-3" style="max-width: 20rem;">
+                    <div class="card border-info mb-3 text-dark" style="max-width: 20rem;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
                             <h4 class="card-title">Info card title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card border-light mb-3" style="max-width: 20rem;">
+                    <div class="card border-light mb-3 text-dark" style="max-width: 20rem;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
                             <h4 class="card-title">Light card title</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card border-dark mb-3" style="max-width: 20rem;">
+                    <div class="card border-dark mb-3 text-dark" style="max-width: 20rem;">
                         <div class="card-header">Header</div>
                         <div class="card-body">
                             <h4 class="card-title">Dark card title</h4>
@@ -1768,7 +1768,7 @@
 
             <div class="col-lg-4">
                 <div class="bs-component">
-                    <div class="card mb-3">
+                    <div class="card mb-3 text-dark">
                         <h3 class="card-header">Card header</h3>
                         <div class="card-body">
                             <h5 class="card-title">Special title treatment</h5>
@@ -1791,7 +1791,7 @@
                             2 days ago
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card text-dark">
                         <div class="card-body">
                             <h4 class="card-title">Card title</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -1828,7 +1828,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
-                        <div class="modal-content">
+                        <div class="modal-content modal-dark">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">

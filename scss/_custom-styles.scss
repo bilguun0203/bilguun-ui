@@ -7,9 +7,29 @@
   border-bottom: none;
   border-left: 3px solid;
 }
-//.alert-link {
-//  font-weight: normal;
-//}
+
+a {
+  color: theme-color("info");
+}
+
+.form-dark {
+  @extend .bg-dark;
+  @extend .text-light;
+}
+
+.table-bg-dark {
+  @extend .bg-dark;
+  @extend .text-light;
+}
+
+.modal-dark {
+  background-color: theme-color("dark");
+}
+
+.modal-dark>.modal-header,
+.modal-dark>.modal-footer {
+  border-color: theme-color-level("dark", -3);
+}
 
 .no-shadow {
   box-shadow: none;
@@ -130,4 +150,34 @@
     @include transition($btn-transition);
     box-shadow: 0 6px 7px rgba(theme-color-level($color, -3), 0.20), 0 4px 6px rgba(theme-color-level($color, -3), 0.33);
   }
+  // -- Table Dark
+  .table-bg-dark .table-#{$color},
+  .table-bg-dark .table-#{$color}>td,
+  .table-bg-dark .table-#{$color}>th {
+    background-color: theme-color-level($color, 0);
+  }
+  .table-hover-dark .table-#{$color}:hover,
+  .table-hover-dark .table-#{$color}:hover>td,
+  .table-hover-dark .table-#{$color}:hover>th {
+    background-color: theme-color-level($color, -2);
+  }
+}
+
+.table-bg-dark .table-light,
+.table-bg-dark .table-light>td,
+.table-bg-dark .table-light>th {
+  color: theme-color('dark');
+}
+.table-hover-dark .table-active,
+.table-hover-dark .table-active>td,
+.table-hover-dark .table-active>th {
+  background-color: rgba(255,255,255, 0.05);
+}
+.table-hover-dark .table-active:hover,
+.table-hover-dark .table-active:hover>td,
+.table-hover-dark .table-active:hover>th {
+  background-color: rgba(255,255,255, 0.08);
+}
+.table-hover-dark tr:hover {
+  background-color: rgba(255,255,255, 0.075);
 }
