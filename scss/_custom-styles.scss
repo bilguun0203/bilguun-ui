@@ -84,6 +84,15 @@
   @extend .shadow-1;
 }
 
+.modal-content {
+  border-radius: 2px;
+}
+
+.popover {
+  @extend .shadow-2;
+  border: none;
+}
+
 @each $color, $value in $theme-colors {
   // -- Alert
   .alert-#{$color} {
