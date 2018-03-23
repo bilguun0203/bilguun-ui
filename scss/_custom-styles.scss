@@ -1,6 +1,27 @@
 // Add additional styles here. For example, overwrite certain styles or add new components.
 // Tip: You can use bootstrap's powerful mixins here!
 
+.mgl {
+  font-family: 'Mongol Sudar', Mongolian baiti;
+  -webkit-writing-mode: vertical-lr;
+  -moz-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  -o-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  direction: ltr;
+  text-combine-upright: digits 2;
+  -moz-font-feature-settings: "ccmp" 1;
+  -moz-font-feature-settings: "ccmp=1";
+  -ms-font-feature-settings: "ccmp" 1;
+  -o-font-feature-settings: "ccmp" 1;
+  -webkit-font-feature-settings: "ccmp" 1;
+  font-feature-settings: "ccmp" 1;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-font-smoothing: subpixel-antialiased;
+  -webkit-text-orientation: sideways-right;
+  -moz-text-orientation: sideways-right;
+}
+
 .alert {
   border-top: none;
   border-right: none;
@@ -88,7 +109,7 @@ a {
 
 .nav-tabs {
   border: none;
-  //border-bottom: solid theme-color-level('primary', -10);
+  border-bottom: solid theme-color-level('primary', -10);
 }
 .nav-tabs .nav-item .nav-link {
   border: none;
@@ -98,6 +119,10 @@ a {
 .nav-tabs .nav-item .nav-link.active {
   border: none;
   border-bottom: solid theme-color-level('primary', 0);
+}
+
+.tab-content {
+  margin-top: 1rem;
 }
 
 .card {

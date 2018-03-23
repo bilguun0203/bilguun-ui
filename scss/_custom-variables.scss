@@ -31,10 +31,11 @@ $input-btn-border-width: 2px;
 $pagination-border-width: 2px;
 $popover-border-radius: 2px;
 
-$nav-tabs-border-width: 2px;
+$nav-tabs-border-width: 3px;
 $nav-tabs-border-color: theme-color-level("primary", 10);
 $nav-tabs-link-hover-border-color: theme-color-level("primary", 5);
 $nav-tabs-link-active-border-color: theme-color-level("primary", 0);
+$nav-tabs-link-active-bg: rgba($primary, 0.25);
 
 $card-border-width: 0;
 
